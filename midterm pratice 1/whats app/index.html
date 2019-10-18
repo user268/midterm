@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html ng-app class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,62 +7,96 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
 
+
   </head>
   <body>
-
-
-    <!--begin nav-->
-
-    <div data-sticky-container>
-  <div class="sticky" data-sticky data-margin-top="0">
-    <nav class="top-bar topbar-responsive">
-      <div class="top-bar-title">
-        <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-        </span>
-        <a class="topbar-responsive-logo" href="#"><strong>MDL SITE</strong></a>
-      </div>
-      <div id="topbar-responsive" class="topbar-responsive-links">
-        <div class="top-bar-right">
-          <ul class="menu simple vertical medium-horizontal">
-            <li><a href="#">Home</a></li>
-            <li><a href="about/index.html">About</a></li>
-            <li><a href="services/index.html">Services</a></li>
-            <li><a href="works/index.html">Works</a></li>
-            <li><a href="news/index.html">News</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
-            <li>
-              <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-            </li>
-          </ul>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h1>Welcome to Foundation</h1>
         </div>
       </div>
-    </nav>
-  </div>
-</div>
 
-<!--end nav-->
+      <!--*begian nav-->
 
+      <div data-sticky-container>
+        <div class="sticky" data-sticky data-margin-top="0">
+          <nav class="top-bar topbar-responsive">
+            <div class="top-bar-title">
+              <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle></button>
+              </span>
+              <a class="topbar-responsive-logo" href="#"><strong>MDL SITE</strong></a>
+            </div>
+            <div id="topbar-responsive" class="topbar-responsive-links">
+              <div class="top-bar-right">
+                <ul class="menu simple vertical medium-horizontal">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="about/index.html">About</a></li>
+                  <li><a href="services/index.html">Services</a></li>
+                  <li><a href="works/index.html">Works</a></li>
+                  <li><a href="news/index.html">News</a></li>
+                  <li><a href="contact/index.html">Contact</a></li>
+                  <li>
 
-    <!--begin header-->
-
-    <div class="marketing-site-hero">
-      <div class="marketing-site-hero-content">
-        <h1>Yeti Snowcone Agency</h1>
-        <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
-        <a href="#" class="round button">learn more</a>
+                    <button type="button" class="button hollow topbar-responsive-button">
+                     	<a href="http://et710.com">ET-710</a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
-    </div>
-
-    <!--end header-->
 
 
-    <!--begin content-->
+      <!--*end nav-->
+
+
+    <!--*begin header-->
+
+    <div class="hero-full-screen">
+
+          <div class="top-content-section">
+            <div class="top-bar">
+              <div class="top-bar-left">
+                <ul class="menu">
+                  <li class="menu-text"><img src="http://placehold.it/75x30" alt="logo"></li>
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-content-section">
+            <h1>Helpful Links</h1>
+            <a href="https://github.com/mdlawrenceusa/speedtest" class="button">Link to SPEEDTEST On GitHub</a>
+        <a href="https://software.intel.com/en-us/xdk/docs/intel-xdk-guided-tutorial" class="button">Link to INTEL XDK Tutorial</a>
+          </div>
+
+          <div class="bottom-content-section" data-magellan data-threshold="0">
+            <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+          </div>
+
+        </div>
+
+        <div id="main-content-section" data-magellan-target="main-content-section">
+          <!-- your content goes here -->
+        </div>
+
+    <!--*end header-->
+
+
+    <!--*begin content-->
 
     <div class="marketing-site-content-section">
   <div class="marketing-site-content-section-img">
@@ -83,10 +117,10 @@
   </div>
 </div>
 
-<!--end content-->
+<!--*end content-->
 
 
-    <!--begin footer-->
+    <!--*begin footer-->
     <footer class="marketing-site-footer">
     <div class="row medium-unstack">
       <div class="medium-4 columns">
@@ -156,4 +190,4 @@
     </div>
   </footer>
 
-  <!--end footer-->
+  <!--*end footer-->
